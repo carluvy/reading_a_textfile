@@ -6,6 +6,13 @@
 
 def find_anagrams(word):
     # [assignment] Add your code here
+    word_list = word.split()
+    first_word = word_list[0]
+    second_word = word_list[1]
 
-    return True
+    return True if sorted(first_word) == sorted(second_word) else False
 
+
+if __name__ == '__main__':
+    words = input('Enter two words separated by a space: ')
+    print(find_anagrams(words))

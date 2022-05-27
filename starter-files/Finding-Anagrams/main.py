@@ -7,8 +7,8 @@
 def find_anagrams(word):
     # [assignment] Add your code here
     word_list = word.split()
-    first_word = word_list[0]
-    second_word = word_list[1]
+    first_word = word_list[0].lower()
+    second_word = word_list[1].lower()
 
     return True if sorted(first_word) == sorted(second_word) else False
 
